@@ -144,6 +144,9 @@
             </div>
 
             <div class="decoration"></div>
+						<h4 ng-hide="!cartItems || cartItems.length == 0" style="font-size: 30px; text-align:center;
+						color: white;
+						background-color: black;">Total: <br> Lps. {{total}}</h4>
 						<a ng-disabled="!cartItems || cartItems.length == 0" ng-click="Paypal()" style="width:100%; border:0;" class="button button-green">Buy with PayPal</a>
 						<div class="decoration"></div>
         </div>

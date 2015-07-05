@@ -11,7 +11,11 @@ angular.module('SteroidsApplication', [
     $scope.menuItems = JSON.parse(localStorage.menuItems);
   }
   if (localStorage.cartItems !== undefined) {
+    $scope.total =0;
     $scope.cartItems = JSON.parse(localStorage.cartItems);
+    for(var i = $scope.cartItems.length - 1; i >= 0; i--) {
+        $scope.total = $scope.total + $scope.cartItems[i].price;
+    }
   }
 
   $scope.searchInput = function()
