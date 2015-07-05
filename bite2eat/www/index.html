@@ -36,6 +36,7 @@
   <script src="/components/angular/angular.js"></script>
   <script src="/components/supersonic/supersonic.js"></script>
   <script src="/components/parse/parse.js"></script>
+  <script src="/components/angular-toastr/dist/angular-toastr.js"></script>
   <script src="/components/webcomponentsjs/webcomponents.js"></script>
 
   <script src="/scripts/application.js"></script>
@@ -61,173 +62,26 @@
               </div>
               <div class="deco"></div>
               <!--Page Breadcrumb-->
-              <div class="breadcrumb">Navigation</div>
+              <div class="breadcrumb">Menu</div>
               <div class="deco"></div>
               <!--Simple Menu Item-->
               <a class="menu-item" href="index.html">
-                  <i class="fa fa-home"></i>
-                  <em>Homepage</em>
+                  <i class="fa fa-cutlery"></i>
+                  <em>I want to eat</em>
                   <i class="fa fa-circle"></i>
               </a>
               <div class="deco"></div>
-              <!-- Submenu Item-->
-              <div class="has-submenu" href="#">
-                  <a class="menu-item active-menu"  href="#" >
-                      <i class="fa fa-code"></i>
-                      <em>Features</em>
-                      <i class="fa fa-plus"></i>
-                  </a>
-                  <div class="submenu">
-                      <div class="deco"></div>
-                      <a class="menu-item" href="features-jquery.html">
-                          <i class="fa fa-angle-right"></i>   <em>jQuery</em>     <i class="fa fa-circle"></i>
-                      </a>
-                      <div class="deco"></div>
-                      <a class="menu-item" href="features-others.html">
-                          <i class="fa fa-angle-right"></i>   <em>Others</em>     <i class="fa fa-circle"></i>
-                      </a>
-                      <div class="deco"></div>
-                      <a class="menu-item" href="features-typography.html">
-                          <i class="fa fa-angle-right"></i>   <em>Typography</em>     <i class="fa fa-circle"></i>
-                      </a>
-                  </div>
-              </div>
-              <div class="deco"></div>
-              <!--Submenu Item-->
-              <div class="has-submenu active-submenu" href="#">
-                  <a class="menu-item"  href="#" >
-                      <i class="fa fa-picture-o"></i>
-                      <em>Portfolio</em>
-                      <i class="fa rotate-plus fa-plus"></i>
-                  </a>
-                  <div class="submenu active-submenu">
-                      <div class="deco"></div>
-                      <a class="menu-item active-menu" href="portfolio-wide.html">
-                          <i class="fa fa-angle-right"></i>   <em>Wide</em>     <i class="fa fa-circle"></i>
-                      </a>
-                      <div class="deco"></div>
-                      <a class="menu-item" href="portfolio-adaptive.html">
-                          <i class="fa fa-angle-right"></i>   <em>Adaptive</em>     <i class="fa fa-circle"></i>
-                      </a>
-                      <div class="deco"></div>
-                      <a class="menu-item" href="portfolio-one.html">
-                          <i class="fa fa-angle-right"></i>   <em>One Column</em>     <i class="fa fa-circle"></i>
-                      </a>
-                      <div class="deco"></div>
-                      <a class="menu-item" href="portfolio-two.html">
-                          <i class="fa fa-angle-right"></i>   <em>Two Columns</em>     <i class="fa fa-circle"></i>
-                      </a>
-                  </div>
-              </div>
-              <div class="deco"></div>
-              <!--Submenu Item-->
-              <div class="has-submenu" href="#">
-                  <a class="menu-item"  href="#" >
-                      <i class="fa fa-camera"></i>
-                      <em>Gallery</em>
-                      <i class="fa fa-plus"></i>
-                  </a>
-                  <div class="submenu">
-                      <div class="deco"></div>
-                      <a class="menu-item" href="gallery-round.html">
-                          <i class="fa fa-angle-right"></i>   <em>Round Thumbs</em>     <i class="fa fa-circle"></i>
-                      </a>
-                      <div class="deco"></div>
-                      <a class="menu-item" href="gallery-square.html">
-                          <i class="fa fa-angle-right"></i>   <em>Square Thumbs</em>     <i class="fa fa-circle"></i>
-                      </a>
-                      <div class="deco"></div>
-                      <a class="menu-item" href="gallery-caption.html">
-                          <i class="fa fa-angle-right"></i>   <em>Caption Thumbs</em>     <i class="fa fa-circle"></i>
-                      </a>
-                  </div>
-              </div>
-              <div class="deco"></div>
-              <!--Submenu Item-->
-              <div class="has-submenu" href="#">
-                  <a class="menu-item"  href="#" >
-                      <i class="fa fa-files-o"></i>
-                      <em>Pages</em>
-                      <i class="fa fa-plus"></i>
-                  </a>
-
-                  <div class="submenu">
-                      <div class="deco"></div>
-                      <a class="menu-item" href="page-error.html">
-                          <i class="fa fa-angle-right"></i>   <em>404 Page</em>     <i class="fa fa-circle"></i>
-                      </a>
-                      <div class="deco"></div>
-                      <a class="menu-item" href="page-soon.html">
-                          <i class="fa fa-angle-right"></i>   <em>Soon Page</em>     <i class="fa fa-circle"></i>
-                      </a>
-                      <div class="deco"></div>
-                      <a class="menu-item" href="page-login.html">
-                          <i class="fa fa-angle-right"></i>   <em>Login Page</em>     <i class="fa fa-circle"></i>
-                      </a>
-                      <div class="deco"></div>
-                      <a class="menu-item" href="page-profile.html">
-                          <i class="fa fa-angle-right"></i>   <em>Profile Page</em>     <i class="fa fa-circle"></i>
-                      </a>
-                      <div class="deco"></div>
-                      <a class="menu-item" href="page-timeline.html">
-                          <i class="fa fa-angle-right"></i>   <em>Timeline Page</em>     <i class="fa fa-circle"></i>
-                      </a>
-                      <div class="deco"></div>
-                      <a class="menu-item" href="page-updates.html">
-                          <i class="fa fa-angle-right"></i>   <em>Updates Page</em>     <i class="fa fa-circle"></i>
-                      </a>
-                      <div class="deco"></div>
-                      <a class="menu-item" href="page-index2.html">
-                          <i class="fa fa-angle-right"></i>   <em>Alternate Home</em>     <i class="fa fa-circle"></i>
-                      </a>
-                  </div>
-              </div>
-              <div class="deco"></div>
-              <!--Simple Menu Item-->
-              <a class="menu-item"  href="contact.html">
-                  <i class="fa fa-envelope-o"></i>
-                  <em>Contact</em>
+              <a class="menu-item" href="cart.html">
+                  <i class="fa fa-shopping-cart"></i>
+                  <em>Cart</em>
                   <i class="fa fa-circle"></i>
               </a>
               <div class="deco"></div>
-              <!-- Page Updates-->
-              <!-- Page Breadcrumb -->
-              <div class="breadcrumb">Page Updates</div>
-              <div class="deco"></div>
-              <!--Update Item-->
-              <div class="update-item red-update">
-                  <i class="fa fa-code"></i>
-                  <strong>Multiple Homescreens</strong>
-                  <em>Immersive or regular slider</em>
-              </div>
-              <div class="deco"></div>
-              <!--Update Item-->
-              <div class="update-item green-update">
-                  <i class="fa fa-check"></i>
-                  <strong>Easy to customize</strong>
-                  <em>With perfect documentation files</em>
-              </div>
-              <div class="deco"></div>
-              <!--Update Item-->
-              <div class="update-item blue-update">
-                  <i class="fa fa-user"></i>
-                  <strong>24/7 Hands On Support</strong>
-                  <em>Because we truly care about you</em>
-              </div>
-              <div class="deco"></div>
-              <!--Update Item-->
-              <div class="update-item orange-update">
-                  <i class="fa fa-trophy"></i>
-                  <strong>Elite Author Quality</strong>
-                  <em>Built by the best in the nieche</em>
-              </div>
-              <div class="deco"></div>
-              <!--Update Item-->
-              <div class="update-item magenta-update">
-                  <i class="fa fa-dollar"></i>
-                  <strong>Best price in the world</strong>
-                  <em>$10 gets you a full application</em>
-              </div>
+              <a class="menu-item" href="index.html">
+                  <i class="fa fa-thumbs-o-up"></i>
+                  <em>Favorites</em>
+                  <i class="fa fa-circle"></i>
+              </a>
               <div class="deco"></div>
               <!-- Page Breadcrumb -->
               <div class="breadcrumb">Copyright 2014. All rights reserved</div>
@@ -241,68 +95,15 @@
               <div class="clear"></div>
               <div class="deco"></div>
               <!-- Social Item -->
-              <a class="social-item" href="tel: +1 234 567 890">
-                  <i class="fa fa-phone"></i>
-                  Call Us
-              </a>
-              <div class="deco"></div>
-              <!-- Social Item -->
-              <a class="social-item" href="+1 234 567 890">
-                  <i class="fa fa-comments"></i>
-                  Text Us
-              </a>
-              <div class="deco"></div>
-              <!-- Social Item -->
               <a class="social-item" href="contact.html">
                   <i class="fa fa-envelope"></i>
                   Mail Us
               </a>
               <div class="deco"></div>
               <!-- Social Item -->
-              <a class="social-item" href="https://www.facebook.com/enabled.labs">
+              <a class="social-item" href="https://www.facebook.com/bite2eat1">
                   <i class="fa fa-facebook"></i>
                   Facebook
-              </a>
-              <div class="deco"></div>
-              <!-- Social Item -->
-              <a class="social-item" href="https://twitter.com/iEnabled">
-                  <i class="fa fa-twitter"></i>
-                  Twitter
-              </a>
-              <div class="deco"></div>
-              <!-- Social Item -->
-              <a class="social-item" href="#">
-                  <i class="fa fa-google-plus"></i>
-                  Google
-              </a>
-              <div class="deco"></div>
-              <!-- Social Item -->
-              <a class="social-item" href="#">
-                  <i class="fa fa-linkedin"></i>
-                  LinkedIn
-              </a>
-              <div class="deco"></div>
-              <a class="social-item" href="#">
-                  <i class="fa fa-instagram"></i>
-                  Instagram
-              </a>
-              <div class="deco"></div>
-              <!-- Social Item -->
-              <a class="social-item" href="http://www.pinterest.com/enableds/">
-                  <i class="fa fa-pinterest"></i>
-                  Pinterest
-              </a>
-              <div class="deco"></div>
-              <!-- Social Item -->
-              <a class="social-item" href="#">
-                  <i class="fa fa-youtube-play"></i>
-                  YouTube
-              </a>
-              <div class="deco"></div>
-              <!-- Social Item -->
-              <a class="social-item" href="#">
-                  <i class="fa fa-skype"></i>
-                  Skype
               </a>
               <div class="deco"></div>
           </div>
@@ -311,13 +112,13 @@
       <div class="header">
           <a class="open-nav" href="#"><i class="fa fa-navicon"></i></a>
           <!--<a class="header-logo" href="#"></a>-->
-          <a class="header-message" href="#"></a>
+          <a class="header-message" href="#">DON'T COOK JUST EAT</a>
           <a class="open-socials" href="#"><i class="fa fa-share-alt"></i></a>
       </div>
 
       <!-- Page Content-->
       <div id="content" class="snap-content" style="background-color: #232427">
-          <img src="images/Bite2EatLogo.png" style="width:100%">
+          <img src="images/Bite2EatLogo.png" style="width:90%; margin-left:20px; ">
           <div class="formFieldWrap" style="margin:10px; margin-top:20px ">
               <label style="margin-left:10px;font-size: 20px !important;color: white;" >What do you want to eat?</label>
               <input id="searchid" ng-model="searchValue" placeholder=" I want to eat..." style="margin-bottom:10px;font-size: 20px !important; height: 50px;padding:10px; border-radius: 10px; background-color:white; margin-left:10px; width: 95%" type="text" name="contactNameField" value="" id="contactNameField"/>
@@ -326,11 +127,14 @@
           <div class="full-bottom"></div>
 
           <div ng-repeat="restaurant in restaurants" class="portfolio-wide full-bottom">
-              <a class="portfolio-wide-item">
-                  <h3>{{restaurant.name}}</h3>
-                  <p>{{restaurant.address}}</p>
+              <a ng-click="menuItem(restaurant)" class="portfolio-wide-item">
+                  <h3 style="font-size:24px; font-weight:bold; ">{{restaurant.attributes.name}}</h3>
+                  <p style="font-size:20px; font-weight:bold; color:#DDDDDD">
+                    {{restaurant.attributes.address}}
+                    <br> Phone: {{restaurant.attributes.phone}}
+                  </p>
                   <div class="overlay"></div>
-                  <img class="responsive-image" src="{{restaurant.brandLogoUrl}}" alt="img">
+                  <img class="responsive-image" src="{{restaurant.attributes.brandLogoUrl}}" alt="img">
               </a>
           </div>
 
@@ -340,9 +144,7 @@
 
           <!-- Page Footer-->
           <div class="footer">
-              <div class="footer-socials half-bottom">
-                  <a style href="#" class="footer-facebook"><i class="fa fa-facebook"></i></a>
-
+              <div class="footer-socials half-bottom" style="width: 40%;">
                   <a href="#" class="footer-up"><i class="fa fa-angle-up"></i></a>
               </div>
               <p class="center-text">Copyright 2015. All rights reserved.</p>
